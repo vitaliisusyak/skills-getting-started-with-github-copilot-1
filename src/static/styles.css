@@ -59,19 +59,128 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #dce3ef;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #eef4ff 100%);
+  box-shadow: 0 3px 14px rgba(26, 35, 126, 0.12);
+}
+
+.activity-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
 }
 
 .activity-card h4 {
-  margin-bottom: 10px;
+  margin-bottom: 0;
   color: #0066cc;
+  font-size: 1.25rem;
+}
+
+.activity-description {
+  color: #48546a;
+  margin-bottom: 12px;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.availability-badge {
+  background-color: #1a237e;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.participants-section {
+  margin-top: 14px;
+  background-color: #f8fbff;
+  border: 1px solid #c7d6f2;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.participants-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1a237e;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.participant-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 9px;
+  color: white;
+  background-color: #6674d8;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+.participants-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  color: #334155;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 6px 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background-color: #eef4ff;
+}
+
+.participant-email {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.delete-participant {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #d32f2f;
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.delete-participant:hover {
+  background-color: #b71c1c;
+  transform: scale(1.08);
+}
+
+.delete-participant span {
+  display: inline-block;
+  transform: translateY(-1px);
+}
+
+.no-participants {
+  color: #64748b;
+  font-style: italic;
+  margin-top: 8px;
 }
 
 .form-group {
